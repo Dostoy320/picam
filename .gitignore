@@ -1,0 +1,5 @@
+*.pyc
+picam.sock
+picam.ini
+venv/
+static/images/

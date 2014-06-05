@@ -1,0 +1,96 @@
+@import url('reset.css');
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+html {
+	width: 100%;
+	font-size: 12px;
+}
+body {
+	width: 100%;
+}
+h1 {
+	font-size: 5rem;
+}
+h3 {
+	font-size: 1.4rem;
+}
+h4 {
+	font-size: 1.2rem;
+}
+button {
+	width: auto;
+	border: 1px solid;
+	border-radius: 3px;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	font: 1.2rem arial, sans-serif;
+	cursor: pointer;
+}
+button:hover {
+	background-color: blue;
+}
+button:active {
+	background-color: white;
+}
+#container {
+	width: 600px;
+	margin: 30px auto;
+}
+header {
+	border-bottom: 1px solid;
+	margin-bottom: 20px;
+}
+
+#cam_img {
+	margin: 10px 0 10px 0;
+	position: relative;
+	width: 600px;
+	height: 395px;
+	overflow: hidden;
+	border: 1px solid;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#cam_img #window_fade {
+	background-color: white;
+	z-index: 20;
+	height: 100%;
+	width: 100%;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	border-radius: 4px;
+	display: none;
+}
+#cam_img #window_fade #ajax_loader {
+	width: 100%;
+	text-align: center;
+}
+#cam_img #window_fade #ajax_loader p {
+	margin-top: 160px;
+	font-size: 1.2rem;
+}
+#image {
+	z-index: 5;
+}
+#control_box {
+	border-top: 1px solid;
+	margin-top: 20px;
+	padding-top: 10px;
+}
+#camera_controls {
+	margin-top: 10px;
+}
+
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px){
+	#cam_img{
+		width: 100%;
+	}
+}
